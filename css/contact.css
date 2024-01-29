@@ -1,0 +1,90 @@
+.contact-profile {
+
+    width: 100%;
+    min-height: 300px;
+    background-color: rgba(255, 255, 255, 0);
+    /* box-shadow: 0 2px 92px #00000012; */
+
+}
+.banner-contact {
+    position: relative;
+    margin-top: 55px;
+}
+
+.image-banner-contact img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.text-banner-contact {
+    position: absolute;
+    top: 50%;
+    right: 55%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.text-banner-contact h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+.contact_container {
+    display: flex;
+    margin-top: 10%;
+    justify-content: space-evenly;
+}
+
+.form-contact {
+    min-width: 400px;
+    max-width: 450px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.input{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+   
+}
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+.sent {
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(96.31deg, #f3b511 -23.36%, #fadc8f 98.83%);
+    border-radius: 20px;
+    margin-right: 5%;
+}
+
+.sent:hover {
+    opacity: 0.8;
+}
+
+#successMessage {
+    display: none;
+    color: green;
+    margin: 20px;
+}
+
+.error,
+.message {
+    display: none;
+    padding: 10px;
+}

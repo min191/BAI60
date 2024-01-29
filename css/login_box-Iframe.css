@@ -1,0 +1,145 @@
+#registration-form {
+    display: none;
+}
+#iframe {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  display: none;
+}
+.login-box {
+  
+  width: 650px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  display: none;
+}
+
+.login-box h2 {
+  text-align: center;
+  color: #333; /* Choose a suitable text color */
+  margin-bottom: 20px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ccc; /* Add a subtle border */
+  border-radius: 4px;
+}
+
+.login-box .button_login {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a smooth hover transition */
+}
+
+.login-box .button_login:hover {
+  background-color: #2980b9;
+}
+
+#closeIframeButton {
+  margin-left: 95%;
+  font-size: 20px;
+  /* background-color: #ccc;  */
+  color: #333; /* Choose a text color */
+ cursor:pointer;
+  transition: background-color 0.3s ease;
+}
+
+#closeIframeButton:hover {
+  opacity: 0,8;
+}
+ 
+.social-icons {
+  margin-bottom: 20px;
+}
+
+.icon-4 {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 20px;
+  color: #333; /* Adjust color as needed */
+}
+
+/* Style form inputs */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ccc; /* Add a subtle border */
+  border-radius: 4px;
+}
+
+/* Style gender selector */
+.gender-selector {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.gender-option {
+  display: flex;
+  margin: 5px;
+}
+
+/* Style password input and show/hide icon */
+.matkhau {
+  position: relative;
+}
+
+input[type="password"] {
+  padding-right: 30px;
+}
+
+.show_2 {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* Style forget password link */
+a {
+  display: block;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333; /* Adjust color as needed */
+  text-decoration: none;
+}
+
+/* Style the submit button-login */
+.button-login {
+  width: 100%;
+  padding: 12px;
+  background-color: #4caf50; /* Adjust color as needed */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a smooth hover transition */
+}
+
+.button-login:hover {
+  background-color: #45a049; /* Change color on hover */
+}

@@ -1,0 +1,86 @@
+<form id="contactForm">
+
+
+
+</form>
+<div class="container-page-text">
+    <div class="container-page">
+        <label for="name">Họ và Tên:</label>
+        <input type="text" id="nameInput" placeholder="VD: Nguyễn Quang Minh" name="name" required>
+    </div>
+    <div class="container-page">
+        <label for="email">Email:</label>
+        <input type="email" id="emailInput" placeholder="VD: abcxyz@gmail.com" name="email" required>
+    </div>
+    <div class="container-page">
+        <label for="message">Nội dung:</label>
+        <textarea id="messageInput" placeholder="Nói gì với tôi..." name="message" rows="3" required></textarea>
+    </div>
+    <button class="btn-submit" onclick="submitForm()">Submit</button>
+    <div class="message" id="Message">Bạn đã nhập thành công</div>
+    <div class="error" id="error">Vui lòng nhập đủ thông tin và đúng định dạng email</div>
+</div>
+
+<style>
+    .contact_container {
+        display: flex;  
+        margin-top: 10%;
+        justify-content: space-around;
+    }
+
+    form {
+        min-width: 400px;
+        max-width: 450px;
+        width: 100%;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+    }
+
+    .btn-submit {
+        /* Add your button styles here */
+    }
+
+    .message,
+    .error {
+        /* Add styles for success and error messages */
+    }
+</style>
+<script>
+    function testEmail(email) {
+        var re = /\S+@\S+\.\S+/;
+        return re.test(email);
+    }
+    function submitForm() {
+        var name = document.getElementById("nameInput").value;
+        var email = document.getElementById("emailInput").value;
+        var message = document.getElementById("messageInput").value;
+        if (name === "" || email === "" || message === "") {
+            document.getElementById("error").style.display = "block";
+            document.getElementById("Message").style.display = "none";
+        } else if (!testEmail(email)) {
+            document.getElementById("error").textContent = "Vui lòng nhập đúng định dạng email";
+            document.getElementById("error").style.display = "block";
+            document.getElementById("Message").style.display = "none";
+        } else {
+            document.getElementById("Message").style.display = "block";
+            document.getElementById("error").style.display = "none";
+            document.getElementById("nameInput").value = "";
+            document.getElementById("emailInput").value = "";
+            document.getElementById("messageInput").value = "";
+            setTimeout(function () {
+                document.getElementById("Message").style.display = "none";
+            }, 3000);
+        }
+    }
+</script> 
