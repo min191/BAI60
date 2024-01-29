@@ -33,45 +33,18 @@
                 <a href="./contact.html">CONTACT</a>
             </li>
 
-            <div class="navigation-card">
-                <!-- <a href="index.html" class="tab">
-                    <svg class="svgIcon" viewBox="0 0 104 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M100.5 40.75V96.5H66V68.5V65H62.5H43H39.5V68.5V96.5H3.5V40.75L52 4.375L100.5 40.75Z"
-                            stroke="black" stroke-width="7"></path>
-                    </svg>
-                </a>
-
-                <a href="#" class="tab">
-                    <svg width="104" height="100" viewBox="0 0 104 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="21.5" y="3.5" width="60" height="60" rx="30" stroke="black" stroke-width="7"></rect>
-                        <g clip-path="url(#clip0_41_27)">
-                            <mask id="mask0_41_27" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="61"
-                                width="104" height="52">
-                                <path d="M0 113C0 84.2812 23.4071 61 52.1259 61C80.706 61 104 84.4199 104 113H0Z"
-                                    fill="white"></path>
-                            </mask>
-                            <g mask="url(#mask0_41_27)">
-                                <path
-                                    d="M-7 113C-7 80.4152 19.4152 54 52 54H52.2512C84.6973 54 111 80.3027 111 112.749H97C97 88.0347 76.9653 68 52.2512 68H52C27.1472 68 7 88.1472 7 113H-7ZM-7 113C-7 80.4152 19.4152 54 52 54V68C27.1472 68 7 88.1472 7 113H-7ZM52.2512 54C84.6973 54 111 80.3027 111 112.749V113H97V112.749C97 88.0347 76.9653 68 52.2512 68V54Z"
-                                    fill="black"></path>
-                            </g>
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_41_27">
-                                <rect width="104" height="39" fill="white" transform="translate(0 61)"></rect>
-                            </clipPath>
-                        </defs>
-                    </svg>
-                </a> -->
-
-                <a href="#" class="tab">
-                    <svg width="101" height="114" viewBox="0 0 101 114" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="46.1726" cy="46.1727" r="29.5497" transform="rotate(36.0692 46.1726 46.1727)"
-                            stroke="black" stroke-width="7"></circle>
-                        <line x1="61.7089" y1="67.7837" x2="97.7088" y2="111.784" stroke="black" stroke-width="7">
-                        </line>
-                    </svg>
-                </a>
+            <div class="container-search">
+                <input checked="" class="checkbox" type="checkbox">
+                <div class="mainbox">
+                    <div class="iconContainer">
+                        <svg viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="search_icon">
+                            <path
+                                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z">
+                            </path>
+                        </svg>
+                    </div>
+                    <input class="search_input" placeholder="search" type="text">
+                </div>
             </div>
         </ul>
     </header>
@@ -200,15 +173,18 @@
                     <img src="./images/dat.jpg" alt="Guest Image">
                     <p>
                         Tinh thần làm việc của bạn rất tích cực và kiên trì. Bạn luôn hướng tới mục tiêu của mình một
-                        cách quyết tâm, không ngần ngại khó khăn.<br> Sự cam kết của bạn là điều đáng nể, đồng hành với đó
+                        cách quyết tâm, không ngần ngại khó khăn.<br> Sự cam kết của bạn là điều đáng nể, đồng hành với
+                        đó
                         là khả năng giải quyết vấn đề linh hoạt và sáng tạo, giúp bạn vượt qua mọi thách thức.
                     </p>
                 </div>
                 <div class="carousel-item testimonial">
                     <img src="./images/quang2.jpg" alt="Guest Image">
                     <p>
-                        Quang Minh, sự xuất sắc và lòng nhiệt thành của bạn không chỉ làm cho bạn nổi bật mà còn là nguồn
-                        động viên và hỗ trợ quý báu cho mọi người xung quanh. <br> Tôi tin rằng với tất cả những phẩm chất
+                        Quang Minh, sự xuất sắc và lòng nhiệt thành của bạn không chỉ làm cho bạn nổi bật mà còn là
+                        nguồn
+                        động viên và hỗ trợ quý báu cho mọi người xung quanh. <br> Tôi tin rằng với tất cả những phẩm
+                        chất
                         tích cực này, bạn sẽ tiếp tục chinh phục những thành công mới trong cuộc sống và sự nghiệp của
                         mình.
                     </p>
@@ -261,79 +237,62 @@
     </footer>
     <div>
         <button>
-            <span class="box-hidden caption8small2"id="openIframeButton" class="caption8small2 btn-hire-me" onclick="showIframe()">
-              <i class="fa-solid fa-paper-plane"></i>
+            <span class="box-hidden caption8small2" id="openIframeButton" class="caption8small2 btn-hire-me"
+                onclick="showIframe()">
+                <i class="fa-solid fa-paper-plane"></i>
             </span>
         </button>
         <div id="iframe">
-          <div class="login-box">
-            <a id="closeIframeButton">
-              <i class="fa-solid fa-xmark"></i>
-            </a>
-            <h2>Sign up</h2>
-              <!-- <input type="text" name="username" placeholder="Username" required>
+            <div class="login-box">
+                <a id="closeIframeButton">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                <h2>Sign up</h2>
+                <!-- <input type="text" name="username" placeholder="Username" required>
               <input type="password" name="password" placeholder="Password" required>
               <button class="button_login" type="submit">Login</button> -->
                 <form action="">
                     <div class="social-icons">
-                        <a class="icon-4" href=""
-                            ><i class="fa-brands fa-google-plus-g"></i
-                        ></a>
-                        <a class="icon-4" href=""
-                            ><i class="fa-brands fa-facebook"></i
-                        ></a>
-                        <a class="icon-4" href=""
-                            ><i class="fa-brands fa-github"></i
-                        ></a>
-                        <a class="icon-4" href=""
-                            ><i class="fa-brands fa-linkedin-in"></i
-                        ></a>
+                        <a class="icon-4" href=""><i class="fa-brands fa-google-plus-g"></i></a>
+                        <a class="icon-4" href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a class="icon-4" href=""><i class="fa-brands fa-github"></i></a>
+                        <a class="icon-4" href=""><i class="fa-brands fa-linkedin-in"></i></a>
                     </div>
-                    
+
                     <input type="text" placeholder="Your name" />
                     <input type="email" placeholder="Email" />
                     <input type="tel" placeholder="Your phone number">
                     <div class="gender-selector">
-                    <label for="">Giới tính</label>
-                    <div class="gender-option">
-                    <input type="radio" id="male" name="gender" value="male">
-                    <label for="male">Nam</label>
+                        <label for="">Giới tính</label>
+                        <div class="gender-option">
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Nam</label>
+                        </div>
+                        <div class="gender-option">
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Nữ</label>
+                        </div>
+                        <div class="gender-option">
+                            <input type="radio" id="other" name="gender" value="other">
+                            <label for="other">Khác</label>
+                        </div>
                     </div>
-                    <div class="gender-option">
-                    <input type="radio" id="female" name="gender" value="female">
-                    <label for="female">Nữ</label>
-                    </div>
-                    <div class="gender-option">
-                    <input type="radio" id="other" name="gender" value="other">
-                    <label for="other">Khác</label>
-                    </div>
-                    </div>
-               
+
                     <div class="matkhau">
-                    <input
-                        type="password"
-                        name="password"
-                        id=""
-                        placeholder="Enter your password"
-                    />
-                    <i class="fa fa-eye show_2"></i>
-                </div>
-                <div class="matkhau">
-                <input
-                    type="password"
-                    name="password"
-                    id=""
-                    placeholder="Enter your password"
-                />
-                <i class="fa fa-eye show_2"></i>
-            </div>
+                        <input type="password" name="password" id="" placeholder="Enter your password" />
+                        <i class="fa fa-eye show_2"></i>
+                    </div>
+                    <div class="matkhau">
+                        <input type="password" name="password" id="" placeholder="Enter your password" />
+                        <i class="fa fa-eye show_2"></i>
+                    </div>
                     <a href="">Forget Your Password</a>
                     <button class="button-login">Sign Up</button>
                 </form>
-            
-          </div>
+
+            </div>
         </div>
-      </div>
+    </div>
 </body>
 <script src="https://kit.fontawesome.com/7dc508f75f.js" crossorigin="anonymous"></script>
 <script src="./js/iframe.js"></script>
