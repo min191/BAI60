@@ -85,7 +85,7 @@ body {
     }
     .about-me-container {
         padding: 50px;
-        height: 450px;
+        /* height: 450px; */
     }
     .about-me-container h3{
         font-size: 40px;
