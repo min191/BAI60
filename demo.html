@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <ul class="header-nav">
+          <a href="#">
+            <img src="images/logoM.png" class="logo" alt="Logo">
+          </a>
+          <li class="nav-link ">
+            <a href="index.html">HOME</a>
+          </li>
+          <li class="nav-link ">
+            <a href="about.html">ABOUT</a>
+          </li>
+          <li class="nav-link ">
+            <a href="project.html">PROJECT</a>
+          </li>
+          <li class="nav-link ">
+            <a class="active" href="contact.html">CONTACT</a>
+          </li>
+          <div class="container-search">
+            <input checked="" class="checkbox" type="checkbox">
+            <div class="mainbox">
+                <div class="iconContainer">
+                    <svg viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="search_icon">
+                        <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z">
+                        </path>
+                    </svg>
+                </div>
+                <input class="search_input" id="searchInput" placeholder="Search" type="text">
+            </div>
+        </div>
+        </ul>
+        
+            <div class="open-menu" onclick="myD()" style="width: 20px;">
+                <a><i class="menumobi fa-solid fa-bars" style="cursor: pointer; font-size: 30px;"></i></a>
+            </div>
+            <div class="menumobi-box" id="menumobi">
+                
+                <div onclick="myX()" style="width: 20px;">
+                    <i class="fa fa-times" aria-hidden="true" style="color: black; font-size: 30px; cursor: pointer;"></i>
+                </div>
+                <nav class="menumobi">
+                    <a href="index.html">HOME</a>
+
+                    <a href="about.html">ABOUT</a>
+        
+                    <a href="project.html">PROJECT</a>
+        
+                    <a href="contact.html">CONTACT</a>
+        
+                </nav>
+            </div>
+        
+      </header>
+    
+    <style>
+    /* Common styles for open-menu */
+.open-menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+/* Styles for screens up to 768px */
+@media screen and (max-width: 1540px) {
+    .nav-bar {
+        display: none;
+    }
+
+    .menumobi-box {
+        background-color: rgba(128, 128, 128, 1);
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        left: 0;
+        padding: 27px 32px 0 30px;
+        top: 0;
+        width: 100vw;
+        z-index: 2000;
+        position: fixed;
+        visibility: hidden;
+    }
+
+    .menumobi {
+        align-items: flex-end;
+        align-self: flex-start;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 62%;
+        margin-top: 42px;
+        position: relative;
+        text-decoration: none;
+    }
+
+    .menumobi>:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    .menumobi a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .open-menu {
+        display: block !important;
+    }
+
+    .profile {
+        margin: -30px calc((100% - 1000vw)/2);
+    }
+
+    .displaycontainer {
+        margin-top: 130px;
+        margin-left: -19px;
+    }
+
+    .container-main {
+        height: 120vh;
+    }
+
+    footer {
+        margin-top: -105px;
+    }
+}
+    
+
+/* Styles for screens between 769px and 1024px */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .nav-bar {
+        display: none;
+    }
+}
+
+/* Styles for screens up to 550px */
+@media screen and (max-width: 550px) {
+    .center,
+    .container-center {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background-color: #333;
+        display: none;
+    }
+
+    .nav-bar li {
+        margin: 0;
+        text-align: center;
+    }
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 1025px) {
+    .nav-bar {
+        display: none;
+    }
+
+    .menumobi-box {
+        background-color: rgba(128, 128, 128, 1);
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        left: 0;
+        padding: 27px 32px 0 30px;
+        top: 0;
+        width: 100vw;
+        z-index: 2000;
+        position: fixed;
+        visibility: hidden;
+    }
+
+    .menumobi {
+        align-items: flex-end;
+        align-self: flex-start;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 62%;
+        margin-top: 42px;
+        position: relative;
+        text-decoration: none;
+    }
+
+    .menumobi>:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    .menumobi a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .open-menu {
+        display: none;
+    }
+}
+
+    </style>
+    <script src="demo.js"></script>
+    <script src="https://kit.fontawesome.com/7dc508f75f.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

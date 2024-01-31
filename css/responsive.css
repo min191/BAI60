@@ -125,3 +125,157 @@ body {
     }
 
 }
+.open-menu {
+    position: fixed;
+    top: 0px;
+    right: 50px;
+    width: 20px;
+    cursor: pointer;
+}
+
+/* Styles for screens up to 768px */
+@media screen and (max-width: 1450px) {
+    .nav-bar {
+        display: none;
+    }
+
+    .menumobi-box {
+        background-color: rgba(128, 128, 128, 0.545);
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        left: 0;
+        padding: 27px 32px 0 30px;
+        top: 0;
+        width: 100vw;
+        z-index: 2000;
+        position: fixed;
+        visibility: hidden;
+    }
+
+    .menumobi {
+        align-items: flex-end;
+        align-self: flex-end;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 62%;
+        margin-top: 42px;
+        margin-right: 55px;
+        position: relative;
+        text-decoration: none;
+    }
+
+    .menumobi>:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    .menumobi a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .open-menu {
+        display: block !important;
+    }
+
+    .profile {
+        margin: -30px calc((100% - 1000vw)/2);
+    }
+
+    .displaycontainer {
+        margin-top: 130px;
+        margin-left: -19px;
+    }
+
+    .container-main {
+        height: 120vh;
+    }
+
+    footer {
+        margin-top: -105px;
+    }
+}
+    
+
+/* Styles for screens between 769px and 1024px */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .nav-bar {
+        display: none;
+    }
+}
+
+/* Styles for screens up to 550px */
+@media screen and (max-width: 550px) {
+    .center,
+    .container-center {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background-color: #333;
+        display: none;
+    }
+
+    .nav-bar li {
+        margin: 0;
+        text-align: center;
+    }
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 1025px) {
+    .nav-bar {
+        display: none;
+    }
+
+    .menumobi-box {
+        background-color: rgba(128, 128, 128, 1);
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        left: 0;
+        padding: 27px 32px 0 30px;
+        top: 0;
+        width: 100vw;
+        z-index: 2000;
+        position: fixed;
+        visibility: hidden;
+    }
+
+    .menumobi {
+        align-items: flex-end;
+        align-self: flex-end;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 62%;
+        margin-top: 42px;
+        position: relative;
+        text-decoration: none;
+    }
+
+    .menumobi>:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    .menumobi a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .open-menu {
+        display: none;
+    }
+}

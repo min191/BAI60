@@ -56,36 +56,53 @@
     </div>
   </div>
   <!-- end banner -->
+
   <div class="contact-profile">
+    <div class="title">
+      <h3>Contact</h3>
+      <div id="line_title"></div>
+    </div>
     <div class="contact_container">
       <div>
-        <div class="title">
-          <h3>Contact</h3>
-          <div id="line_title"></div>
-        </div>
-
+        
+<!-- 
         <form class="form-contact" id="contactForm">
           <div class="container-page-text">
             <div class="container-page">
-              <label for="name">Họ và Tên:</label>
               <input class="input" style="border-radius: 5px;" type="text" id="nameInput"
-                placeholder="VD: Nguyễn Quang Minh" name="name" required>
+              placeholder="VD: Nguyễn Quang Minh" name="name" required>
             </div>
             <div class="container-page">
-              <label for="email">Email:</label>
               <input class="input" style="border-radius: 5px;" type="email" id="emailInput"
-                placeholder="VD: abcxyz@gmail.com" name="email" required>
+              placeholder="VD: abcxyz@gmail.com" name="email" required>
             </div>
             <div class="container-page">
               <label for="message">Nội dung:</label>
               <textarea style="border-radius: 5px;" id="messageInput" placeholder="Nói gì với tôi..." name="message"
-                rows="3" required></textarea>
+              rows="3" required></textarea>
             </div>
-            <div class="message" id="Message">Bạn đã gửi thành công.</div>
-            <div class="error" id="error">Vui lòng nhập đủ thông tin.</div>
           </div>
-        </form>
-        <button class="sent btn-submit" onclick="submitForm()">Submit</button>
+        </form> -->
+        <div class="card">
+          <p class="heading">what you say ?</p>
+          
+          <div class="input-div">
+            <!-- <label for="name">Họ và Tên:</label> -->
+            <input class="input" id="nameInput" type="text" placeholder="Name">
+          </div>
+          <div class="input-div">
+            <!-- <label for="email">Email:</label> -->
+            <input type="text" id="emailInput" for="email" class="input" placeholder="Email">
+          </div>
+            <div class="input-div">
+              <input class="input" id="messageInput" type="text" placeholder="Message">
+            </div>
+            <div class="button-div">
+              <div class="message" id="Message">Bạn đã gửi thành công.</div>
+              <div class="error" id="error">Vui lòng nhập đủ thông tin.</div>
+              <button class="submit"  onclick="submitForm()">Submit</button>
+            </div>
+          </div>
       </div>
 
       <iframe
