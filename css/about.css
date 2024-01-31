@@ -3,8 +3,10 @@
     font-weight: 600;
     position: relative;
     z-index: 2;
+    
 }
 .title{
+    
     margin: 0 20px;
 }
 #animation_text{
@@ -13,7 +15,8 @@
 .about{
     list-style-type: none;
     /* padding-left: 20px; */
-    padding: 20px;
+    padding: 40px;
+
 }
 .about-container{
     padding: 20px;

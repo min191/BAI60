@@ -7,7 +7,7 @@
   <title>Web của Minh</title>
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/animation.css">
-  <link rel="stylesheet" href="./css/login_box-Iframe.css">
+  <link rel="stylesheet" href="./css/Iframe.css">
   <link rel="stylesheet" href="./css/contact.css">
   <!-- <link rel="stylesheet" href="./css/login_box-Iframe.css"> -->
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
@@ -26,7 +26,7 @@
         <a href="about.html">ABOUT</a>
       </li>
       <li class="nav-link ">
-        <a href="homework.html">HOMEWORK</a>
+        <a href="project.html">PROJECT</a>
       </li>
       <li class="nav-link ">
         <a class="active" href="contact.html">CONTACT</a>
@@ -34,16 +34,15 @@
       <div class="container-search">
         <input checked="" class="checkbox" type="checkbox">
         <div class="mainbox">
-          <div class="iconContainer">
-            <svg viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="search_icon">
-              <path
-                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z">
-              </path>
-            </svg>
-          </div>
-          <input class="search_input" placeholder="search" type="text">
+            <div class="iconContainer">
+                <svg viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="search_icon">
+                    <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z">
+                    </path>
+                </svg>
+            </div>
+            <input class="search_input" id="searchInput" placeholder="Search" type="text">
         </div>
-      </div>
+    </div>
     </ul>
   </header>
   <!-- banner -->
@@ -97,11 +96,6 @@
     </div>
   </div>
 
-
-
-
-
-
   <footer class="footer">
     <h2 id="item3">Contact</h2>
 
@@ -141,63 +135,19 @@
     </div>
   </footer>
   <div>
-    <span class="box-hidden caption8small2" id="openIframeButton" onclick="showIframe()">
-      <i class="fa-solid fa-paper-plane"></i>
-    </span>
-    <div id="iframe">
-      <div class="login-box">
-        <a id="closeIframeButton">
-          <i class="fa-solid fa-xmark"></i>
-        </a>
-        <h2>Sign up</h2>
-        <!-- <input type="text" name="username" placeholder="Username" required>
-          <input type="password" name="password" placeholder="Password" required>
-          <button class="button_login" type="submit">Login</button> -->
-        <form action="">
-          <div class="social-icons">
-            <a class="icon-4" href=""><i class="fa-brands fa-google-plus-g"></i></a>
-            <a class="icon-4" href=""><i class="fa-brands fa-facebook"></i></a>
-            <a class="icon-4" href=""><i class="fa-brands fa-github"></i></a>
-            <a class="icon-4" href=""><i class="fa-brands fa-linkedin-in"></i></a>
-          </div>
-
-          <input type="text" placeholder="Your name" />
-          <input type="email" placeholder="Email" />
-          <input type="tel" placeholder="Your phone number">
-          <div class="gender-selector">
-            <label for="">Giới tính</label>
-            <div class="gender-option">
-              <input type="radio" id="male" name="gender" value="male">
-              <label for="male">Nam</label>
-            </div>
-            <div class="gender-option">
-              <input type="radio" id="female" name="gender" value="female">
-              <label for="female">Nữ</label>
-            </div>
-            <div class="gender-option">
-              <input type="radio" id="other" name="gender" value="other">
-              <label for="other">Khác</label>
-            </div>
-          </div>
-
-          <div class="matkhau">
-            <input type="password" name="password" id="" placeholder="Enter your password" />
-            <i class="fa fa-eye show_2"></i>
-          </div>
-          <div class="matkhau">
-            <input type="password" name="password" id="" placeholder="Enter your password" />
-            <i class="fa fa-eye show_2"></i>
-          </div>
-          <a href="">Forget Your Password</a>
-          <button class="button-login">Sign Up</button>
-        </form>
-
-      </div>
-    </div>
-  </div>
+    <button class="box-hidden caption8small2">
+      <i class="fa-regular fa-user"></i>
+  </button>
+    <!-- <div class="caption8small2">
+      <button class="button2 ">
+          <i class="fa-regular fa-user"></i>
+      </button>
+  </div> -->
+ 
+</div>
 </body>
 <script src="https://kit.fontawesome.com/7dc508f75f.js" crossorigin="anonymous"></script>
 <script src="./js/iframe.js"></script>
 <script src="./js/contact.js"></script>
-
+<script src="./js/search.js"></script>
 </html>

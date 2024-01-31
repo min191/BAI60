@@ -1,0 +1,99 @@
+.banner-contact {
+    position: relative;
+    margin-top: 55px;
+}
+
+.image-banner-contact img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.text-banner-contact {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.text-banner-contact h1 {
+    font-size: 60px;
+    margin: 0;
+}
+.project-container{
+  width: 100%;
+  min-height: 300px;
+  margin-top: 30px;
+  /* padding: 1%; */
+  background-color: rgb(247, 247, 247);
+  /* border-radius: 8px; */
+  box-shadow: 0 2px 92px #00000012;
+}
+.table-card-project {
+    display: grid;
+    grid-template-columns: repeat(4, 20em);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px; 
+    justify-content: center;
+}
+
+.card-project {
+    width: 190px;
+    height: 254px;
+    background: linear-gradient(#FFD700 0%, #ffd059 90.81%);
+    transition: all 0.4s;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+    font-size: 30px;
+    font-weight: 900;
+  }
+  
+  .card-project:hover {
+    border-radius: 15px;
+    cursor: pointer;
+    transform: scale(1.2);
+    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+    background: linear-gradient(#f3b511 0%, #fad880 90.81%);
+}
+  
+  .first-content {
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    border-radius: 15px;
+  }
+  
+  .card-project:hover .first-content {
+    height: 0px;
+    opacity: 0;
+  }
+  
+  .second-content {
+    height: 0%;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: all 0.4s;
+    font-size: 0px;
+    transform: rotate(90deg) scale(-1);
+    line-height: 50px;
+  }
+  
+  .card-project:hover .second-content {
+    opacity: 1;
+    height: 100%;
+    font-size: 1.8rem;
+    transform: rotate(0deg);
+  }
+ 
