@@ -500,13 +500,15 @@
     }
 
     .images img {
-        height: 130%;
+        height: 650px;
         position: absolute;
-        left: 50%;
+        left: 450px;
         bottom: 0;
         transform: translateX(-50%);
         transition: bottom 1s, left 1s;
     }
+    
+    
 
     .images:hover .shape {
         bottom: 40px;
