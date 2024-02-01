@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./css/animation.css">
   <link rel="stylesheet" href="./css/Iframe.css">
   <link rel="stylesheet" href="./css/contact.css">
+  <link rel="stylesheet" href="./css/responsive.css">
   <!-- <link rel="stylesheet" href="./css/login_box-Iframe.css"> -->
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 </head>
@@ -34,16 +35,38 @@
       <div class="container-search">
         <input checked="" class="checkbox" type="checkbox">
         <div class="mainbox">
-            <div class="iconContainer">
-                <svg viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="search_icon">
-                    <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z">
-                    </path>
-                </svg>
-            </div>
-            <input class="search_input" id="searchInput" placeholder="Search" type="text">
+          <div class="iconContainer">
+            <svg viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="search_icon">
+              <path
+                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z">
+              </path>
+            </svg>
+          </div>
+          <input class="search_input" placeholder="search..." type="text">
         </div>
-    </div>
+      </div>
     </ul>
+    <!-- mobi -->
+    <div class="open-menu" onclick="myD()" style="width: 20px;">
+      <a><i class="menumobi fa-solid fa-bars" style="cursor: pointer; font-size: 30px;"></i></a>
+    </div>
+    <div class="menumobi-box" id="menumobi">
+
+      <div class="close-menu" onclick="myX()">
+        <i class="fa fa-times" aria-hidden="true" style="color: black; font-size: 30px; cursor: pointer;"></i>
+
+        <nav class="menumobi">
+          <a href="index.html">HOME</a>
+
+          <a href="about.html">ABOUT</a>
+
+          <a href="project.html">PROJECT</a>
+
+          <a href="contact.html">CONTACT</a>
+
+        </nav>
+      </div>
+    </div>
   </header>
   <!-- banner -->
   <div class="banner-contact">
@@ -57,34 +80,11 @@
   <!-- end banner -->
 
   <div class="contact-profile">
-    <div class="title">
-      <h3>Contact</h3>
-      <div id="line_title"></div>
-    </div>
     <div class="contact_container">
       <div>
-        
-<!-- 
-        <form class="form-contact" id="contactForm">
-          <div class="container-page-text">
-            <div class="container-page">
-              <input class="input" style="border-radius: 5px;" type="text" id="nameInput"
-              placeholder="VD: Nguyễn Quang Minh" name="name" required>
-            </div>
-            <div class="container-page">
-              <input class="input" style="border-radius: 5px;" type="email" id="emailInput"
-              placeholder="VD: abcxyz@gmail.com" name="email" required>
-            </div>
-            <div class="container-page">
-              <label for="message">Nội dung:</label>
-              <textarea style="border-radius: 5px;" id="messageInput" placeholder="Nói gì với tôi..." name="message"
-              rows="3" required></textarea>
-            </div>
-          </div>
-        </form> -->
         <div class="card">
           <p class="heading">what you say ?</p>
-          
+
           <div class="input-div">
             <!-- <label for="name">Họ và Tên:</label> -->
             <input class="input" id="nameInput" type="text" placeholder="Name">
@@ -93,15 +93,15 @@
             <!-- <label for="email">Email:</label> -->
             <input type="text" id="emailInput" for="email" class="input" placeholder="Email">
           </div>
-            <div class="input-div">
-              <input class="input" id="messageInput" type="text" placeholder="Message">
-            </div>
-            <div class="button-div">
-              <div class="message" id="Message">Bạn đã gửi thành công.</div>
-              <div class="error" id="error">Vui lòng nhập đủ thông tin.</div>
-              <button class="submit"  onclick="submitForm()">Submit</button>
-            </div>
+          <div class="input-div">
+            <input class="input" id="messageInput" type="text" placeholder="Message">
           </div>
+          <div class="button-div">
+            <div class="message" id="Message">Bạn đã gửi thành công.</div>
+            <div class="error" id="error">Vui lòng nhập đủ thông tin.</div>
+            <button class="submit" onclick="submitForm()">Submit</button>
+          </div>
+        </div>
       </div>
 
       <iframe
@@ -153,11 +153,13 @@
   <button class="box-hidden show_login">
     <i class="fa-regular fa-user"></i>
   </button>
- 
-</div>
+
+  </div>
 </body>
 <script src="https://kit.fontawesome.com/7dc508f75f.js" crossorigin="anonymous"></script>
 <script src="./js/iframe.js"></script>
 <script src="./js/contact.js"></script>
 <script src="./js/search.js"></script>
+<script src="./js/show&hiden_menumobi.js"></script>
+
 </html>

@@ -214,6 +214,12 @@ a {
 .carousel-wrapper {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    width: 100%;
+} 
+@media screen and (max-width: 415px){
+    .courser-wrapper{
+        width: 100%;
+    }
 }
 
 .carousel-item {

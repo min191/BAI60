@@ -297,3 +297,69 @@ body {
         display: none;
     }
 }
+@media screen and (max-width: 1450px) {
+    .center,
+    .container-center {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background-color: #333;
+        display: none;
+    }
+
+    .nav-bar li {
+        margin: 0;
+        text-align: center;
+    }
+    #about-info .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #about-info .info-left {
+        width: 100% !important;
+    }
+    #about-info .info-right {
+        width: 100% !important;
+    }
+    .carousel-item img {
+        height: 100px;
+        margin: auto;
+    }
+    .carousel-item {
+        display: flex;
+        flex-direction: column;
+        min-width: 85%;
+    }
+    .carousel-item p{
+        font-size: 15px;
+        text-align: left;
+        width: 85%;
+    }
+    .project-container{
+        text-align: center;
+    }
+    .title{
+        display: block;
+        text-align: center;margin: auto;
+    }
+    #line_title{
+        margin: auto;
+    }
+    .contact_container{
+        flex-wrap: wrap;
+    }
+    .contact_container .card{
+        width: 100%;
+    }
+    .contact_container iframe{
+        width: 95%;
+    }
+}

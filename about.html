@@ -25,7 +25,7 @@
                 <a href="index.html">HOME</a>
             </li>
             <li class="nav-link ">
-                <a class="active" href="./about.html">ABOUT</a>
+                <a class="active" href="about.html">ABOUT</a>
             </li>
             <li class="nav-link ">
                 <a href="project.html">PROJECT</a>
@@ -33,7 +33,6 @@
             <li class="nav-link ">
                 <a href="contact.html">CONTACT</a>
             </li>
-
             <div class="container-search">
                 <input checked="" class="checkbox" type="checkbox">
                 <div class="mainbox">
@@ -44,21 +43,42 @@
                             </path>
                         </svg>
                     </div>
-                    <input class="search_input" placeholder="search" type="text">
+                    <input class="search_input" placeholder="search..." type="text">
                 </div>
             </div>
         </ul>
+        <!-- mobi -->
+        <div class="open-menu" onclick="myD()" style="width: 20px;">
+            <a><i class="menumobi fa-solid fa-bars" style="cursor: pointer; font-size: 30px;"></i></a>
+        </div>
+        <div class="menumobi-box" id="menumobi">
+
+            <div class="close-menu" onclick="myX()">
+                <i class="fa fa-times" aria-hidden="true" style="color: black; font-size: 30px; cursor: pointer;"></i>
+
+                <nav class="menumobi">
+                    <a href="index.html">HOME</a>
+
+                    <a href="about.html">ABOUT</a>
+
+                    <a href="project.html">PROJECT</a>
+
+                    <a href="contact.html">CONTACT</a>
+
+                </nav>
+            </div>
+        </div>
     </header>
     <!-- banner -->
-  <div class="banner-project">
+    <div class="banner-project">
 
-    <div class="section-title">
-      <h1 class="title-big">ABOUT</h1>
-      <h1 class="title-small">about me</h1>
+        <div class="section-title">
+            <h1 class="title-big">ABOUT</h1>
+            <h1 class="title-small">about me</h1>
+        </div>
     </div>
-  </div>
 
-  <!-- end banner -->
+    <!-- end banner -->
     <section id="about-info">
         <div class="container">
             <div id="animation_text" class="info-left">
@@ -241,5 +261,5 @@
 <script src="https://kit.fontawesome.com/7dc508f75f.js" crossorigin="anonymous"></script>
 <script src="./js/iframe.js"></script>
 <script src="./js/about.js"></script>
-
+<script src="./js/show&hiden_menumobi.js"></script>
 </html>
