@@ -1,99 +1,217 @@
-.banner-contact {
-    position: relative;
-    margin-top: 55px;
+
+.section-title {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  position: relative !important;
+  margin-top: 50px;
+  height: 550px;
+  background:#7c7c7c2b;
+}
+.section-title .title-big {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 900 !important;
+  line-height: 1.2;
+  font-size: calc(2.125rem + 10.5vw);
+  text-transform: uppercase !important;
+  color: #000000 !important;
+  /* padding-top: 150px; */
 }
 
-.image-banner-contact img {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
+.section-title .title-small {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+  font-size: calc(1.375rem + 1.5vw);
+  font-weight: 900 !important;
+  position: absolute !important;
+  text-transform: uppercase !important;
+  color: #ffd059 !important;
+  /* padding-top: 150px; */
+}
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center !important;
+  /* gap: 20px; */
+  margin-top: 50px;
 }
 
-.text-banner-contact {
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    left: 42%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
+.project-item {
+  width: calc(25% - 20px);
+  /* Adjust the width based on your needs */
+  margin-bottom: 20px;
+  box-sizing: border-box;
 }
 
-.text-banner-contact h1 {
-    font-size: 60px;
-    margin: 0;
+.paste-button {
+  position: relative;
+  display: block;
 }
-.project-container{
+
+.dropdown-project {
+  background-color: #ffd059;
+  color: #ffffff;
+  padding: 10px 15px;
+  font-size: 15px;
+  font-weight: bold;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  width: 203px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  font-size: 13px;
+  position: absolute;
+  z-index: 1;
+  min-width: 200px;
+  background-color: #ffe9b0be;
+  border: 2px solid #ffd059;
+  border-radius: 0px 0px 15px 15px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.dropdown-content a {
+  color: #ffffff;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: block;
+  transition: 0.1s;
+}
+
+.dropdown-content a:hover {
+  background-color: #ffd059;
+  color: #212121;
+}
+
+.dropdown-content a:focus {
+  background-color: #212121;
+  color: #4CAF50;
+}
+
+.dropdown-content #top:hover {
+  border-radius: 0px 13px 0px 0px;
+}
+
+.dropdown-content #bottom:hover {
+  border-radius: 0px 0px 13px 13px;
+}
+
+.paste-button:hover button {
+  border-radius: 15px 15px 0px 0px;
+}
+
+.paste-button:hover .dropdown-content {
+  display: block;
+}
+
+.project {
   width: 100%;
-  min-height: 300px;
-  margin-top: 30px;
-  /* padding: 1%; */
-  background-color: rgb(247, 247, 247);
-  /* border-radius: 8px; */
-  box-shadow: 0 2px 92px #00000012;
-}
-.table-card-project {
-    display: grid;
-    grid-template-columns: repeat(4, 20em);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 20px; 
-    justify-content: center;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 1rem !important;
+  padding-top: 3rem !important;
 }
 
-.card-project {
-    width: 190px;
-    height: 254px;
-    background: linear-gradient(#FFD700 0%, #ffd059 90.81%);
-    transition: all 0.4s;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
-    font-size: 30px;
-    font-weight: 900;
-  }
-  
-  .card-project:hover {
-    border-radius: 15px;
-    cursor: pointer;
-    transform: scale(1.2);
-    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
-    background: linear-gradient(#f3b511 0%, #fad880 90.81%);
+.project .project-filters {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 0.5rem !important;
+  text-align: center !important;
 }
-  
-  .first-content {
-    height: 100%;
-    width: 100%;
-    transition: all 0.4s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 1;
-    border-radius: 15px;
-  }
-  
-  .card-project:hover .first-content {
-    height: 0px;
-    opacity: 0;
-  }
-  
-  .second-content {
-    height: 0%;
-    width: 100%;
-    opacity: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    transition: all 0.4s;
-    font-size: 0px;
-    transform: rotate(90deg) scale(-1);
-    line-height: 50px;
-  }
-  
-  .card-project:hover .second-content {
-    opacity: 1;
-    height: 100%;
-    font-size: 1.8rem;
-    transform: rotate(0deg);
-  }
- 
+
+.project .project-filters li {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  color: #0bceaf;
+  border-color: #0bceaf;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 0.25rem !important;
+  padding: 10px 25px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.project .project-filters li:hover,
+.project .project-filters li.active {
+  color: #fff !important;
+  background-color: #0bceaf;
+  border-color: #0bceaf;
+}
+
+.project-container .project-item {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 1.5rem !important;
+}
+
+.project-item .item-content {
+  overflow: hidden !important;
+  position: relative !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.project-item .item-content img {
+  vertical-align: middle;
+  border-style: none;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.25rem !important;
+  width: 100% !important;
+}
+
+.project-item .item-content .project-btn {
+  background-color: #0bceaf !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  border-radius: 4px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.project-item .item-content .project-btn i {
+  font-weight: 900;
+  color: #fff !important;
+  font-size: 60px;
+}
+
+.project-item:hover .item-content .project-btn {
+  opacity: 1;
+  width: calc(100% - 60px);
+  height: calc(100% - 60px);
+  top: 30px;
+  left: 30px;
+}
+
+.project-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.25rem !important;
+  width: 100%
+}

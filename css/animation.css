@@ -171,3 +171,13 @@
       width: 55%;
   }
 }
+
+@keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-15px);
+  }
+}

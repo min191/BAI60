@@ -442,3 +442,30 @@
 .matkhau2 i{
   color: gray;
 }
+@media only screen and (max-width: 768px) {
+  .section-form .inner-wrap {
+    min-height: auto;
+  }
+
+  .section-form .inner-wrap form {
+    padding: 0 20px;
+  }
+
+  .section-form .inner-wrap input {
+    width: 100%;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+
+  .section-form .inner-wrap .toggle-container {
+    width: 100%;
+  }
+
+  .section-form .inner-wrap .toggle-panel,
+  .section-form .inner-wrap .toggle-left,
+  .section-form .inner-wrap .toggle-right {
+    padding: 0 15px;
+  }
+}

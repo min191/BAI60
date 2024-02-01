@@ -8,11 +8,13 @@ body {
     body {
         font-size: 20px;
     }
+
     .sidebar {
         width: 100%;
         padding: 0;
         margin: 0;
     }
+
     .sidebar-information {
         list-style-type: none;
         padding-left: 0;
@@ -26,6 +28,7 @@ body {
         margin: 0;
         margin-top: 20px;
     }
+
     .sidebar h3 {
         font-size: 40px;
         color: #212529;
@@ -86,29 +89,35 @@ body {
     .info-right {
         padding-top: 50px;
     }
+
     .about-me-container {
         padding-bottom: 50px;
         /* text-align: justify; */
-        
+
         /* height: 450px; */
     }
-    .about-me-container h3{
+
+    .about-me-container h3 {
         font-size: 40px;
     }
-    .about-me-container h5{
+
+    .about-me-container h5 {
         font-size: 25px;
     }
-    .about-me-container p{
+
+    .about-me-container p {
         font-size: 20px;
         width: 90%;
     }
-    .about-me-container .read-more{
+
+    .about-me-container .read-more {
         position: absolute;
         margin-top: 3%;
         left: 50%;
-        transform: translate(-55%,-30%);
+        transform: translate(-55%, -30%);
     }
-    .btn-preference{
+
+    .btn-preference {
         display: none;
     }
 }
@@ -125,6 +134,8 @@ body {
     }
 
 }
+
+/* mobi */
 .open-menu {
     position: fixed;
     top: 0px;
@@ -132,7 +143,13 @@ body {
     width: 20px;
     cursor: pointer;
 }
-
+.close-menu {
+    width: 20px;
+    position: absolute;
+    z-index: 100;
+    top: 40px;
+    right: 40px;
+}
 /* Styles for screens up to 768px */
 @media screen and (max-width: 1450px) {
     .nav-bar {
@@ -143,11 +160,11 @@ body {
         background-color: rgba(128, 128, 128, 0.545);
         display: flex;
         flex-direction: column;
-        height: 100vh;
-        left: 0;
+        right: 0;
+        height: 100vh;  
         padding: 27px 32px 0 30px;
         top: 0;
-        width: 100vw;
+        width: 40%;
         z-index: 2000;
         position: fixed;
         visibility: hidden;
@@ -163,7 +180,7 @@ body {
         font-weight: 600;
         line-height: 62%;
         margin-top: 42px;
-        margin-right: 55px;
+        /* margin-right: 55px; */
         position: relative;
         text-decoration: none;
     }
@@ -198,7 +215,7 @@ body {
         margin-top: -105px;
     }
 }
-    
+
 
 /* Styles for screens between 769px and 1024px */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -209,6 +226,7 @@ body {
 
 /* Styles for screens up to 550px */
 @media screen and (max-width: 550px) {
+
     .center,
     .container-center {
         display: flex;
@@ -239,14 +257,14 @@ body {
     }
 
     .menumobi-box {
-        background-color: rgba(128, 128, 128, 1);
+        background-color: rgba(128, 128, 128, 0.545);
         display: flex;
         flex-direction: column;
-        height: 100vh;
-        left: 0;
+        right: 0;
+        height: 100vh;  
         padding: 27px 32px 0 30px;
         top: 0;
-        width: 100vw;
+        width: 40%;
         z-index: 2000;
         position: fixed;
         visibility: hidden;

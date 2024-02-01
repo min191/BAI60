@@ -48,13 +48,13 @@
     <!-- mobi -->
     <div class="open-menu" onclick="myD()" style="width: 20px;">
       <a><i class="menumobi fa-solid fa-bars" style="cursor: pointer; font-size: 30px;"></i></a>
-  </div>
-  <div class="menumobi-box" id="menumobi">
-      
-      <div onclick="myX()" style="width: 20px;">
-          <i class="fa fa-times" aria-hidden="true" style="color: black; font-size: 30px; cursor: pointer;"></i>
-      </div>
-      <nav class="menumobi">
+    </div>
+    <div class="menumobi-box" id="menumobi">
+
+      <div class="close-menu" onclick="myX()">
+        <i class="fa fa-times" aria-hidden="true" style="color: black; font-size: 30px; cursor: pointer;"></i>
+
+        <nav class="menumobi">
           <a href="index.html">HOME</a>
 
           <a href="about.html">ABOUT</a>
@@ -63,8 +63,9 @@
 
           <a href="contact.html">CONTACT</a>
 
-      </nav>
-  </div>
+        </nav>
+      </div>
+    </div>
   </header>
   <section class="hero">
     <div id="animation_text" class="hello">
@@ -242,13 +243,13 @@
       </div>
     </div>
   </footer>
-  <button class="box-hidden caption8small2">
+  <button class="box-hidden show_login">
     <i class="fa-regular fa-user"></i>
   </button>
   <script src="https://kit.fontawesome.com/7dc508f75f.js" crossorigin="anonymous"></script>
   <script src="./js/iframe.js"></script>
   <script src="./js/carousel.js"></script>
-  <script src="demo.js"></script>
+  <script src="./js/show&hiden_menumobi.js"></script>
 </body>
 
 </html>

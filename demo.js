@@ -1,25 +1,33 @@
-// function myD() {
-//     var x = document.getElementById("menu");
-//     if (x.style.visibility === "hidden") {
-//       x.style.visibility = "visible";
-//     } else {
-//       x.style.visibility = "hidden";
-//     }
-//   }
-//   function myX() {
-//     var x = document.getElementById("menu");
-//     if (x.style.visibility === "visible") {
-//       x.style.visibility = "hidden";
-//     } else {
-//       x.style.visibility = "visible";
-//     }
-//   }
-function myD() {
-    var menumobi = document.getElementById("menumobi");
-    menumobi.style.visibility = (menumobi.style.visibility === "hidden") ? "visible" : "hidden";
-}
+// portfolio
+const $portfolioFilters = document.querySelectorAll(".portfolio-filters li");
 
-function myX() {
-    var menumobi = document.getElementById("menumobi");
-    menumobi.style.visibility = (menumobi.style.visibility === "visible") ? "hidden" : "visible";
-}
+$portfolioFilters.forEach((filter) => {
+  filter.addEventListener("click", () => {
+    // remove class active on $portfolioFilters
+    $portfolioFilters.forEach((filter) => {
+      filter.classList.remove("active");
+    });
+
+    // add class active on $portfolioFilters
+    filter.classList.add("active");
+
+    const selector = filter.getAttribute("data-filter");
+
+    // show all .portfolio-item and hide .portfolio-item with selector
+    const $portfolioItem = document.querySelectorAll(".portfolio-item");
+
+    $portfolioItem.forEach((item) => {
+      item.style.display = "none";
+
+      if (selector == "*") {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+
+        if (item.classList.contains(selector)) {
+          item.style.display = "block";
+        }
+      }
+    });
+  });
+});

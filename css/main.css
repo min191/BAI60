@@ -605,18 +605,21 @@
         border-radius: 50%;
     }
 
-    .caption8small2 {
+    .show_login {
         position: fixed;
         color: rgb(255, 255, 255);
         border: none;
         cursor: pointer;
         font-size: 15px;
         bottom: 50px;
+        left: 25px;
         box-sizing: border-box;
+        animation: action 1s infinite alternate;
+
     }
 
     .box-hidden {
-        width: 140px;
+        width: 130px;
         height: auto;
         float: left;
         transition: .5s linear;
@@ -675,3 +678,5 @@
         transform: translateX(0);
         transition: .3s transform linear, .3s height linear .5s;
     }
+  
+  

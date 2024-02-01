@@ -1,6 +1,6 @@
 
 const modalClose = document.querySelector(".modal-close");
-const button = document.querySelector(".caption8small2");
+const button = document.querySelector(".show_login");
 const template = `<div class="modal">
 <div class="modal-content">
   <i class="fa fa-times modal-close"></i>
@@ -249,8 +249,8 @@ const template3 = `<div class="modal-2">
 </div>
 </div>`;
 
-const caption8small2 = document.querySelector(".caption8small3");
-caption8small2.addEventListener("click", function () {
+const show_login = document.querySelector(".caption8small3");
+show_login.addEventListener("click", function () {
     document.body.insertAdjacentHTML("beforeend", template2);
     const togglePasswordIcons = document.querySelectorAll(".show_2");
     togglePasswordIcons.forEach(function (icon) {
