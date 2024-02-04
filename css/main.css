@@ -507,8 +507,8 @@
         transform: translateX(-50%);
         transition: bottom 1s, left 1s;
     }
-    
-    
+
+
 
     .images:hover .shape {
         bottom: 40px;
@@ -678,5 +678,3 @@
         transform: translateX(0);
         transition: .3s transform linear, .3s height linear .5s;
     }
-  
-  
