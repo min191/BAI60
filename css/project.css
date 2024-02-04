@@ -31,9 +31,12 @@
   /* padding-top: 150px; */
 }
 .project-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   margin-top: 50px;
 }
+
 
 .project-item {
   margin-bottom: 20px;
@@ -83,9 +86,9 @@
 
 
 
-.dropdown-content a:focus {
-  background-color: #212121;
-  color: #4CAF50;
+.dropdown-content a:hover {
+  background-color: #ffd059;
+  color: #000000;
 }
 
 .dropdown-content #top:hover {
