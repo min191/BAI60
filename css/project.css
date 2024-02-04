@@ -30,185 +30,57 @@
   color: #ffd059 !important;
   /* padding-top: 150px; */
 }
-.project-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 5fr);
-  margin-top: 50px;
-}
 
-
-.project-item {
-  margin-bottom: 20px;
-  box-sizing: border-box;
-}
-
-.paste-button {
+.slider{
   position: relative;
-  display: block;
-  justify-content:center !important;
-  align-items: center !important;  
+  width: 100%;
+  height: 370px;
+  margin-top: 5%;
+  overflow: hidden;
 }
-
-.dropdown-project {
-  background-color: #ffd059;
-  color: #ffffff;
-  padding: 10px 15px;
-  font-size: 15px;
-  font-weight: bold;
-  border: 2px solid transparent;
-  border-radius: 15px;
-  width: 203px;
-  height: 60px;
-  cursor: pointer;
-}
-
-.dropdown-content {
-  display: none;
-  font-size: 13px;
+.project-item{
   position: absolute;
-  z-index: 1;
-  min-width: 200px;
-  background-color: #ffe9b0be;
-  border: 2px solid #ffd059;
-  border-radius: 0px 0px 15px 15px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  text-align: center;
-}
-
-.dropdown-content a {
-  color: #ffffff;
-  padding: 8px 10px;
-  text-decoration: none;
-  display: block;
-  transition: 0.1s;
-}
-
-
-
-.dropdown-content a:hover {
-  background-color: #ffd059;
-  color: #000000;
-}
-
-.dropdown-content #top:hover {
-  border-radius: 0px 13px 0px 0px;
-}
-
-.dropdown-content #bottom:hover {
-  border-radius: 0px 0px 13px 13px;
-}
-
-.paste-button:hover button {
-  border-radius: 15px 15px 0px 0px;
-}
-
-.paste-button:hover .dropdown-content {
-  display: block;
-}
-
-.project {
-  width: 100%;
-  padding-right: 35px;
-  padding-left: 35px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-bottom: 1rem !important;
-  padding-top: 3rem !important;
-}
-
-.project .project-filters {
-  position: relative;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  flex: 0 0 100%;
-  max-width: 100%;
-  margin-bottom: 0.5rem !important;
-  text-align: center !important;
-}
-
-.project .project-filters li {
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-  user-select: none;
-  background-color: transparent;
-  border: 1px solid transparent;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  color: #0bceaf;
-  border-color: #0bceaf;
-  font-size: 0.875rem;
-  line-height: 1.5;
-  margin: 0.25rem !important;
-  padding: 10px 25px;
-  border-radius: 100px;
-  cursor: pointer;
-}
-
-.project .project-filters li:hover,
-.project .project-filters li.active {
-  color: #fff !important;
-  background-color: #0bceaf;
-  border-color: #0bceaf;
-}
-
-.project-container .project-item {
-  position: relative;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-bottom: 1.5rem !important;
-}
-
-.project-item .item-content {
-  overflow: hidden !important;
-  position: relative !important;
-  margin-bottom: 0.5rem !important;
-}
-
-.project-item .item-content img {
-  vertical-align: middle;
-  border-style: none;
-  max-width: 100%;
-  height: auto;
-  border-radius: 0.25rem !important;
-  width: 100% !important;
-}
-
-.project-item .item-content .project-btn {
-  background-color: #0bceaf !important;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  position: absolute;
-  width: 0;
-  height: 0;
-  top: 50%;
-  left: 50%;
-  border-radius: 4px;
-  opacity: 0;
+  width: 200px;
+  height: 320px;
+  text-align: justify;
+  background: linear-gradient(-45deg, #ffe29a  0%, #ffc831 100% );
+  border-radius: 10px;
+  padding: 20px;
   transition: 0.5s;
+  left: calc(50% - 110px);
+  top: 0;
 }
-
-.project-item .item-content .project-btn i {
-  font-weight: 900;
-  color: #fff !important;
-  font-size: 60px;
+#next, #prev{
+  position: absolute;
+  top: 40%;
+  color: #000000;
+  background-color: transparent;
+  border: none;
+  font-size: xxx-large;
+  font-family: monospace;
+  font-weight: bold;
+  left: 400px;
 }
-
-.project-item:hover .item-content .project-btn {
-  opacity: 1;
-  width: calc(100% - 60px);
-  height: calc(100% - 60px);
-  top: 30px;
-  left: 30px;
+#next{
+  left: unset;
+  right: 400px;
 }
-
-.project-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 0.25rem !important;
-  width: 100%
+.text-project{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  padding-top: 10px;
+}
+.text-link{
+  margin: 15px;
+}
+.text-link :hover{
+  color: #000000;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% ); 
+  border-radius: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
