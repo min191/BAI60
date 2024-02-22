@@ -189,7 +189,9 @@ body {
         position: fixed;
         visibility: hidden;
     }
-
+    .box-hidden{
+        display: none;
+    }
     .menumobi {
         align-items: flex-end;
         align-self: flex-end;
